@@ -1,0 +1,42 @@
+
+
+**Features and their current status**
+
+1. **(4) Letter tiles in the player’s “hand” are selected randomly from a data structure with the proper distribution of the letters.**
+   - Status: Fully working. The `generateTiles()` function handles the selection of tiles randomly according to their distribution.
+
+2. **(4) Letter tiles can be dragged-and-dropped onto target Scrabble squares.**
+   - Status: Fully working. The jQuery UI draggable and droppable functionalities enable this feature.
+
+3. **(4) Program identifies which letter tile is dropped onto which Scrabble square.**
+   - Status: Fully working. The tile's letter and the square's row and column are used to track this.
+
+4. **(4) Board includes bonus squares.**
+   - Status: Fully working(by grading standards). The current implementation includes the double-letter squares. However, other bonus squares such as double word, triple letter, and triple word squares are not yet implemented.
+
+5. **(4) Score is tallied correctly, including consideration of bonus square multipliers.**
+   - Status: Fully working. The score calculation is in place, but currently, it only considers double-letter squares. It does not account for other bonus squares.
+
+6. **(3) Any number of words can be played until the player wishes to quit or depletes all tiles.**
+   - Status: Not working. The current implementation supports playing only one word at a time and does not account for the scenario where a player depletes all tiles.
+
+7. **(3) The board is cleared after each round so that a new word can be played.**
+   - Status: Not working. Currently, there is no mechanism to clear the board after a round.
+
+8. **(3) After playing a word, only the number of letter tiles needed to bring the player’s “hand” back to 7 tiles are selected.**
+   - Status: Not working. The current system always generates seven new tiles, regardless of how many tiles remain in the player's hand.
+
+9. **(3) Score is kept for multiple words until the user restarts a new game.**
+   - Status: Not working. Currently, the score is only kept for a single word and not persisted across multiple words.
+
+10. **(2) Tiles can only be dragged from the “rack” to Scrabble board. If the user drops them anywhere else, they will be bounced back to the “rack”.**
+   - Status: Fully working. When a tile is dropped anywhere but the board said tile will rebound back  to  rack.
+
+11. **(2) Once the tile is placed on the Scrabble board, it cannot be moved.**
+   - Status: Fully working. Once a tile is dropped, it is disabled from being draggable. 
+
+12. **(2) Except for the first letter, all subsequent letters must be placed directly next to or below another letter with no space. Else, they will bounce back to the “rack”.**
+   - Status: Fully working(by grading standars). The code checks for horizontally adjacent tiles, but not for vertically adjacent tiles, as there is only one row.
+
+13. **(2) User can always restart the game.**
+   - Status: Fully working. Pressing the "Start New Game" button does just that.

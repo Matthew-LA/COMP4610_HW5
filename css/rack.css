@@ -1,0 +1,38 @@
+/*
+File: rack.css
+GUI Assignment: HW5
+Description: Implementing a Bit of Scrabble with Drag-and-Drop
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 30, 2023
+*/
+#rack-container {
+    position: relative;
+    height: 250px;
+}
+
+#rack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#tile-container {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    z-index: 2;
+}
+
+#letter_score {
+    margin-top: 20px;
+}
+
+.drop-here {
+    position: relative;
+    /* ...rest of your styles... */
+}
+
+

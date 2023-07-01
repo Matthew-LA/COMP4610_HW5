@@ -1,0 +1,50 @@
+<!--
+File: index.html
+GUI Assignment: HW5
+Description: Implementing a Bit of Scrabble with Drag-and-Drop
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 30, 2023
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add other meta tags as required -->
+    <title>Scrabble</title>
+</head>
+<body>
+    <h2 class="center">Scrabble with Drag-and-Drop</h2>
+
+    <!--insert scrabble board-->
+    <div id="scrabble-board"></div>
+    
+    <div id="rack-container">
+        <span><img id="rack" src="img/scrabble-tile-holder.png" alt="rack"></span>
+        <div id="tile-container"></div>
+    </div>
+
+    <div id="letter_score">
+        <div id="letters"></div>
+        <span id="score_display">Score:<span id="score"></span>
+    </div>
+
+    <input type="button" id="restart" value="Start New Game" onClick="window.location.reload()">
+
+    
+    <link rel="stylesheet" href="css/rack.css">
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Include jQuery UI library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Scrabble JavaScript -->
+    <script src='js/scrabble.js'></script>
+
+    <script>
+    window.onload = function() {
+        initializeGame();
+    };
+    </script>
+</body>
+</html>
